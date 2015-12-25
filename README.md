@@ -1,11 +1,14 @@
 Unofficial Quora Widget
 ----------------------------------------
-Card for your Quora profile.
+A very light weight JS to add Quora cards on your websites.
+
+The cards look something like this.
+
 ![Quora Cards Preview](https://cloud.githubusercontent.com/assets/4745789/12001621/1ac512d2-ab12-11e5-802d-5bcdbb76e48a.png)
 
 Usage
 ------------------------------------------
-Visit card generator: http://codeville.org.in/quora
+Visit: http://codeville.org.in/quora to generate a Quora Profile card for yourself.
 
 Contribution
 ------------------------------------------
