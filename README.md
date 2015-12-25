@@ -10,6 +10,13 @@ Usage
 ------------------------------------------
 Visit: http://codeville.org.in/quora to generate a Quora Profile card for yourself.
 
+Or you can copy-paste the lines below in your website.
+
+```
+<div type="card" quora-profile="https://www.quora.com/profile/Arpit-Bhayani"></div>
+<script src="http://codeville.org.in/static/js/quora-widget.min.js"></script>
+```
+
 Contribution
 ------------------------------------------
 This project is under the BSD License.
