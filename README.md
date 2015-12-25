@@ -6,6 +6,8 @@ The cards look something like this.
 
 ![Quora Cards Preview](https://cloud.githubusercontent.com/assets/4745789/12001621/1ac512d2-ab12-11e5-802d-5bcdbb76e48a.png)
 
+You can also see live version of this card here at [Arpit's Blog](http://arpitbbhayani.github.com/about-me)
+
 Usage
 ------------------------------------------
 Visit: http://codeville.org.in/quora to generate a Quora Profile card for yourself.
