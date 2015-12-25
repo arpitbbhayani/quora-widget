@@ -1,6 +1,6 @@
 Unofficial Quora Widget
 ----------------------------------------
-A very light weight JS to add Quora cards on your websites.
+Quora cards for your profile.
 
 The cards look something like this.
 
