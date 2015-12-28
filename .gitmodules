@@ -1,0 +1,3 @@
+[submodule "quora-widget-api"]
+	path = quora-widget-api
+	url = git@github.com:arpitbbhayani/quora-widget-api.git
