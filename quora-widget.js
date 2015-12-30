@@ -1,3 +1,5 @@
+var WIDGET_HOST = "http://codeville.org.in";
+
 function quora_widget(url, element) {
     var xmlhttp;
     if (window.XMLHttpRequest) {
@@ -19,7 +21,7 @@ function quora_widget(url, element) {
             }
         }
     }
-    xmlhttp.open("GET", "http://codeville.org.in/quora/process?url=" + url, true);
+    xmlhttp.open("GET", WIDGET_HOST + "/quora/process?url=" + url, true);
     xmlhttp.send();
 }
 
