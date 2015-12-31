@@ -1,28 +1,14 @@
 var WIDGET_HOST = "http://codeville.org.in";
 
-function quora_widget(url, element) {
-    var xmlhttp;
-    if (window.XMLHttpRequest) {
-        xmlhttp = new XMLHttpRequest();
-    } else {
-        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    xmlhttp.onreadystatechange = function() {
-        if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
-            if(xmlhttp.status == 200){
-                console.log(element);
-                element.innerHTML = xmlhttp.responseText;
-            }
-            else if(xmlhttp.status == 400) {
-                alert('There was an error 400')
-            }
-            else {
-                alert('something else other than 200 was returned')
-            }
-        }
-    }
-    xmlhttp.open("GET", WIDGET_HOST + "/quora/process?url=" + url, true);
-    xmlhttp.send();
+function resizeQuoraWidget(iframe) {
+    iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+}
+
+function quora_widget(width, height, type, url, element) {
+    var template = '<iframe width="' + width + 'px"'
+                   + ' src="' + WIDGET_HOST + '/quoracard/process?url=' +
+                   url + '" onload="resizeQuoraWidget(this)" FRAMEBORDER=0></iframe>';
+    element.innerHTML = template;
 }
 
 window.addEventListener("DOMContentLoaded", function() {
@@ -30,7 +16,6 @@ window.addEventListener("DOMContentLoaded", function() {
     for(var i = 0; i < quora_profile_elements.length; i++) {
         var quora_profile_element = quora_profile_elements[i];
         var url = quora_profile_element.getAttribute('quora-profile');
-
-        quora_widget(url, quora_profile_element);
+        quora_widget('380', '200', 'card', url, quora_profile_element);
     }
 }, false);
