@@ -20,6 +20,35 @@ Or you can copy-paste the lines below in your website.
 <script src="http://codeville.org.in/static/js/quora-widget.min.js"></script>
 ```
 
+Advanced Usage
+-----------------------------------------------
+You can very much configure this widget to your needs. You need to set and reset some attributes in your `div` tag.
+
+1. **`iframe`** : This option allows you to load the widget in an `iframe`. If you set this attribute then your complete card will load inside an iframe instead of directly injecting HTML code inside your DOM structure. One big advantage of this is neat styling. Possible values: "yes" and "no"
+
+2. **`widget-width`**: This option allows you to set the width of the widget to your needs. This only works when your `iframe` is set to `yes`
+
+3. **`widget-height`**: This option allows you to set the height of the widget to your needs. This only works when your `iframe` is set to `yes`
+
+4. **`type`**: This option tells what type of widget to load. Possible values: `card` and `widget`
+
+**`card`**: This is the minimal information about your Quora profile, like
+
+- Your Profile Bio
+- Number of answers
+- Number of followers
+- Various statistics
+- Highlights from your profile
+
+FYI: Default width of `card` is 380px and height of the card depends on your data present in profile. But in case you use `iframe` attribute the height can be tweaked to the one specified in `widget-height`.
+
+**`widget`**: This feature is under development and should not be used right now. I am to provide following things in this
+
+- All information shown in Quora card.
+- Snippets of recent 20 answers you wrote.
+
+If you have any more suggestions on this feel free to create raise an issue [here](https://github.com/arpitbbhayani/quora-widget-api/issues)
+
 
 Ingredients
 -----------------------------------------
